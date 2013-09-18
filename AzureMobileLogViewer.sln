@@ -1,0 +1,74 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureMobileServiceLogViewer", "AzureMobileServiceLogViewer\AzureMobileServiceLogViewer.csproj", "{2E0E7A30-D6A8-45CF-80CD-06106C02107C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureMobileServiceLogViewer.Controls", "AzureMobileServiceLogViewer.Controls\AzureMobileServiceLogViewer.Controls.csproj", "{18A9FC6C-95BC-4373-A52E-03D64ED6AD02}"
+EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "AzureMobileLogViewer.Installer", "AzureMobileLogViewer.Installer\AzureMobileLogViewer.Installer.wixproj", "{0967F2EC-9493-4716-A0A9-45B93930F927}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FeedVersion", "FeedVersion", "{90FE1D91-EB38-454D-BE36-74B9612810EC}"
+	ProjectSection(SolutionItems) = preProject
+		FeedVersion\release.xml = FeedVersion\release.xml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs18
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = AzureMobileLogViewer.Installer\\AzureMobileLogViewer.Installer.wixproj
+		SccProjectName1 = AzureMobileLogViewer.Installer
+		SccLocalPath1 = AzureMobileLogViewer.Installer
+		SccProjectUniqueName2 = AzureMobileServiceLogViewer.Controls\\AzureMobileServiceLogViewer.Controls.csproj
+		SccProjectName2 = AzureMobileServiceLogViewer.Controls
+		SccLocalPath2 = AzureMobileServiceLogViewer.Controls
+		SccProjectUniqueName3 = AzureMobileServiceLogViewer\\AzureMobileServiceLogViewer.csproj
+		SccProjectName3 = AzureMobileServiceLogViewer
+		SccLocalPath3 = AzureMobileServiceLogViewer
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E0E7A30-D6A8-45CF-80CD-06106C02107C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E0E7A30-D6A8-45CF-80CD-06106C02107C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E0E7A30-D6A8-45CF-80CD-06106C02107C}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{2E0E7A30-D6A8-45CF-80CD-06106C02107C}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{2E0E7A30-D6A8-45CF-80CD-06106C02107C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2E0E7A30-D6A8-45CF-80CD-06106C02107C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E0E7A30-D6A8-45CF-80CD-06106C02107C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E0E7A30-D6A8-45CF-80CD-06106C02107C}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{2E0E7A30-D6A8-45CF-80CD-06106C02107C}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{2E0E7A30-D6A8-45CF-80CD-06106C02107C}.Release|x86.ActiveCfg = Release|Any CPU
+		{18A9FC6C-95BC-4373-A52E-03D64ED6AD02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18A9FC6C-95BC-4373-A52E-03D64ED6AD02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18A9FC6C-95BC-4373-A52E-03D64ED6AD02}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{18A9FC6C-95BC-4373-A52E-03D64ED6AD02}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{18A9FC6C-95BC-4373-A52E-03D64ED6AD02}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{18A9FC6C-95BC-4373-A52E-03D64ED6AD02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18A9FC6C-95BC-4373-A52E-03D64ED6AD02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18A9FC6C-95BC-4373-A52E-03D64ED6AD02}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{18A9FC6C-95BC-4373-A52E-03D64ED6AD02}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{18A9FC6C-95BC-4373-A52E-03D64ED6AD02}.Release|x86.ActiveCfg = Release|Any CPU
+		{0967F2EC-9493-4716-A0A9-45B93930F927}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{0967F2EC-9493-4716-A0A9-45B93930F927}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{0967F2EC-9493-4716-A0A9-45B93930F927}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{0967F2EC-9493-4716-A0A9-45B93930F927}.Debug|x86.ActiveCfg = Debug|x86
+		{0967F2EC-9493-4716-A0A9-45B93930F927}.Debug|x86.Build.0 = Debug|x86
+		{0967F2EC-9493-4716-A0A9-45B93930F927}.Release|Any CPU.ActiveCfg = Release|x86
+		{0967F2EC-9493-4716-A0A9-45B93930F927}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{0967F2EC-9493-4716-A0A9-45B93930F927}.Release|Mixed Platforms.Build.0 = Release|x86
+		{0967F2EC-9493-4716-A0A9-45B93930F927}.Release|x86.ActiveCfg = Release|x86
+		{0967F2EC-9493-4716-A0A9-45B93930F927}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

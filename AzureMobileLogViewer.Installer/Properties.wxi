@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Include xmlns:netfx="http://schemas.microsoft.com/wix/NetFxExtension">
+<!--
+  <PropertyRef Id="NETFRAMEWORK40FULLINSTALLROOTDIR" />
+  <PropertyRef Id="NETFRAMEWORK40FULLINSTALLROOTDIR64" />
+
+  <?ifdef var.Debug ?>
+  <SetProperty Id="WINSVCACCOUNTNAME" After="CostFinalize" Value="[ComputerName]\Administrator" />
+  <Property Id="WINSVCACCOUNTPWD" Value="Administr@tor" />
+  <?else ?>
+  <Property Id="WINSVCACCOUNTNAME" Value="NT AUTHORITY\LocalService" />
+  <Property Id="WINSVCACCOUNTPWD" Value="Please, specify a valid password at install time." />
+  <?endif ?>-->
+
+</Include>

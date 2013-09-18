@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Include xmlns:util="http://schemas.microsoft.com/wix/UtilExtension">
+
+  
+
+  <Component Id="Component.AzureMobileServiceLogViewer" Guid="750DE334-42AF-40F0-A235-431C8A092C35" Win64="$(var.Win64)">
+    <!-- install component files -->
+    <File Id="File.AzureMobileServiceLogViewer.exe" Source="$(var.AzureMobileServiceLogViewer.TargetPath)" KeyPath="yes" />
+    <File Id="File.AzureMobileServiceLogViewer.exe.config" Source="$(var.AzureMobileServiceLogViewer.TargetPath).config" />
+  </Component>
+  
+  <Component Id="Component.AzureMobileServiceLogViewer.Controls" Guid="ADC0004A-FD3D-42BE-AF19-E7804EFD5134" Win64="$(var.Win64)">
+    <File Id="File.AzureMobileServiceLogViewer.Controls.dll" Source="$(var.AzureMobileServiceLogViewer.Controls.TargetPath)" KeyPath="yes" />
+  </Component>
+
+  <!--<Component Id="Component.AzureMobileServiceLogViewer.DataBase" Guid="4790E75B-6883-461C-AB3E-E278C269EC82" Win64="$(var.Win64)">
+    <File Id="File.AzureMobileServiceLogViewer.LogViewer.mdf" Source="$(var.AzureMobileServiceLogViewer.TargetDir)LogViewer.mdf" KeyPath="yes" />
+    <File Id="File.AzureMobileServiceLogViewer.LogViewer.ldf" Source="$(var.AzureMobileServiceLogViewer.TargetDir)LogViewer_log.ldf"  />
+  </Component>-->
+
+  <Component Id="Component.AzureMobileServiceLogViewer.References" Guid="B6E459B4-FF17-49B0-B2B2-5EA1F40118D6" Win64="$(var.Win64)">
+    <File Id="File.AzureMobileServiceLogViewer.References.MahApps.Metro.dll" Source="$(var.AzureMobileServiceLogViewer.TargetDir)MahApps.Metro.dll" KeyPath="yes" />
+    <File Id="File.AzureMobileServiceLogViewer.References.System.Windows.Interactivity.dll" Source="$(var.AzureMobileServiceLogViewer.TargetDir)System.Windows.Interactivity.dll"/>
+    <File Id="File.AzureMobileServiceLogViewer.References.Newtonsonft.Json.dll" Source="$(var.AzureMobileServiceLogViewer.TargetDir)Newtonsoft.Json.dll" />
+    <File Id="File.AzureMobileServiceLogViewer.References.EntityFramework.dll" Source="$(var.AzureMobileServiceLogViewer.TargetDir)EntityFramework.dll" />
+  </Component>
+  
+  
+  
+</Include>

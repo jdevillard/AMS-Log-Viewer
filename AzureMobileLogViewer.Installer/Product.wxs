@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi" xmlns:util="http://schemas.microsoft.com/wix/UtilExtension">
+
+  <!-- Common variables -->
+  
+  <?define ProductName = "Azure Mobile Log Viewer" ?>
+  <?define ProductDisplayName = "Azure Mobile Log Viewer" ?>
+  <?define ProductVersion = "1.0" ?>
+  <?define ProductFullVersion = "1.0.0.0" ?>
+  <?define ProductAppFolder = "$(var.ProductDisplayName)" ?>
+  <?define Manufacturer = "jdevillard" ?>
+  <?define ApplicationDataFolder = "AppDataFolder"?>
+
+  <!-- Platform-specific variables -->
+
+  <?if $(var.Platform) = x64 ?>
+  <?define Win64 = "yes" ?>
+  <?define Architecture = "x64" ?>
+  <?define ProductId = "D0B72A1A-2E8B-474D-910F-468E9E68E03D" ?>
+  <?define ProductUpgradeCode = "3e4f8361-2c64-4348-9000-45a99e23d0e1" ?>
+  <?define PlatformProgramFilesFolder = "ProgramFiles64Folder" ?>
+  <?else ?>
+  <?define Win64 = "no" ?>
+  <?define Architecture = "x86" ?>
+  <?define ProductId = "8DD53EBF-0AD0-4080-B365-348EEEC45303" ?>
+  <?define ProductUpgradeCode = "1ab2faff-d86f-42ee-8442-fae70c102cf0" ?>
+  <?define PlatformProgramFilesFolder = "ProgramFilesFolder" ?>
+  <?endif ?>
+  
+  <!-- Windows Installer package -->
+
+  <Product Id="$(var.ProductId)"
+           Name="$(var.ProductDisplayName)"
+           Language="!(loc.LANGID)"
+           Version="$(var.ProductFullVersion)"
+           Manufacturer="$(var.Manufacturer)"
+           UpgradeCode="$(var.ProductUpgradeCode)"           
+           >
+
+    <Package InstallerVersion="200" Compressed="yes" InstallPrivileges="elevated" Platform="$(var.Architecture)" />
+    <Media Id="1" Cabinet="media1.cab" EmbedCab="yes" />
+
+    <?include "Properties.wxi" ?>
+    
+    <!-- Internal components here -->
+
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="$(var.PlatformProgramFilesFolder)">
+        <Directory Id="INSTALLLOCATION" Name="$(var.ProductAppFolder)">
+
+          <?include "Components.wxi" ?>
+          
+        </Directory>
+      </Directory>
+      <Directory Id="$(var.ApplicationDataFolder)">
+        <Directory Id="AzureMobileServiceLogViewer" Name="AzureMobileServiceLogViewer">
+          <?include "UserComponents.wxi"?>      
+        </Directory>
+      </Directory>
+    </Directory>
+
+    
+    
+    
+    <?include "Features.wxi" ?>
+    <?include "UI.wxi" ?>
+    
+  </Product>
+</Wix>

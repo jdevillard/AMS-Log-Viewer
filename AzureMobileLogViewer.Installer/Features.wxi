@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Include>
+
+  <Feature Id="F_39B08686_2324_4B8B_B1D4_EC57E3B0DD70" Title="Azure Mobile Service Log Viewer" Level="1" TypicalDefault="install" InstallDefault="local" AllowAdvertise="no" Absent="disallow">
+
+    <ComponentRef Id="Component.AzureMobileServiceLogViewer" />
+    <ComponentRef Id="Component.AzureMobileServiceLogViewer.DataBase"/>
+    <ComponentRef Id="Component.AzureMobileServiceLogViewer.Controls" />
+    
+    <ComponentRef Id="Component.AzureMobileServiceLogViewer.References" />
+    
+  </Feature>
+
+</Include>
