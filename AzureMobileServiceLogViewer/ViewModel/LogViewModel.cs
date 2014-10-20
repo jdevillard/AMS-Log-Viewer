@@ -497,7 +497,7 @@ namespace AzureMobileServiceLogViewer.ViewModel
                             {
                                 Id = Guid.Parse(subscription.Id),
                                 Name = subscription.Name,
-                                Cert = profile.ManagementCertificate
+                                Cert = subscription.ManagementCertificate
                             });
 
                             var subId = Guid.Parse(subscription.Id);
@@ -509,7 +509,7 @@ namespace AzureMobileServiceLogViewer.ViewModel
                                 {
                                     Id = subId,
                                     Name = subscription.Name,
-                                    Cert = profile.ManagementCertificate
+                                    Cert = subscription.ManagementCertificate
                                 };
                                 ctx.Subscriptions.Add(subToInsert);
                                 Application.Current.Dispatcher.Invoke(() =>
@@ -521,9 +521,9 @@ namespace AzureMobileServiceLogViewer.ViewModel
                             else if (ctx.Subscriptions.Find(subId) != null)
                             {
                                 var sub = ctx.Subscriptions.Find(subId);
-                                if (sub.Cert != profile.ManagementCertificate)
+                                if (sub.Cert != subscription.ManagementCertificate)
                                 {
-                                    sub.Cert = profile.ManagementCertificate;
+                                    sub.Cert = subscription.ManagementCertificate;
                                     Message = String.Format("Certificate change for Subscription :{0}",
                                         subscription.Name);
                                 }

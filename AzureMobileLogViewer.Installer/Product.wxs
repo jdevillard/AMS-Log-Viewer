@@ -54,6 +54,14 @@
       </Directory>
       <Directory Id="$(var.ApplicationDataFolder)">
         <Directory Id="AzureMobileServiceLogViewer" Name="AzureMobileServiceLogViewer">
+          <Component Id="Component.AzureMobileServiceLogViewerFolder"  Guid="E6CCBEDCA79A47F4881077B986F1372B">
+            <RegistryValue Root="HKCU" Key="Software\$(var.Manufacturer)\$(var.ProductAppFolder)"
+                  Name="ApplicationDataFolder"
+                  Type="string"
+                  Value="AzureMobileServiceLogViewerFolder"
+                  KeyPath="yes"/>
+            <RemoveFolder Id="AzureMobileServiceLogViewer" On="uninstall"/>
+          </Component>
           <?include "UserComponents.wxi"?>      
         </Directory>
       </Directory>

@@ -4,9 +4,15 @@
   
 
   <Component Id="Component.AzureMobileServiceLogViewer.DataBase" Guid="4790E75B-6883-461C-AB3E-E278C269EC82" Win64="$(var.Win64)">
-    <File Id="File.AzureMobileServiceLogViewer.LogViewer.mdf" Source="$(var.AzureMobileServiceLogViewer.TargetDir)LogViewer.mdf" KeyPath="yes" />
+    <RegistryValue Root="HKCU" Key="Software\$(var.Manufacturer)\$(var.ProductAppFolder)"
+                   Name="Database"
+                   Type="string"
+                   Value="AzureMobileServiceLogViewer.LogViewer.mdf"
+                   KeyPath="yes"/>
+    <File Id="File.AzureMobileServiceLogViewer.LogViewer.mdf" Source="$(var.AzureMobileServiceLogViewer.TargetDir)LogViewer.mdf"  />
     <File Id="File.AzureMobileServiceLogViewer.LogViewer.ldf" Source="$(var.AzureMobileServiceLogViewer.TargetDir)LogViewer_log.ldf"  />
   </Component>
   
   
 </Include>
+

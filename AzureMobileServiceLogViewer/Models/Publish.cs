@@ -16,8 +16,9 @@ using System.Xml.Serialization;
 namespace AzureMobileServiceLogViewer.Models
 {
 
+
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.32559")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.18020")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -44,7 +45,7 @@ namespace AzureMobileServiceLogViewer.Models
     }
 
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.32559")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.18020")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -54,11 +55,9 @@ namespace AzureMobileServiceLogViewer.Models
 
         private PublishDataPublishProfileSubscription[] subscriptionField;
 
+        private string schemaVersionField;
+
         private string publishMethodField;
-
-        private string urlField;
-
-        private string managementCertificateField;
 
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("Subscription", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
@@ -76,6 +75,20 @@ namespace AzureMobileServiceLogViewer.Models
 
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string SchemaVersion
+        {
+            get
+            {
+                return this.schemaVersionField;
+            }
+            set
+            {
+                this.schemaVersionField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
         public string PublishMethod
         {
             get
@@ -87,38 +100,10 @@ namespace AzureMobileServiceLogViewer.Models
                 this.publishMethodField = value;
             }
         }
-
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string Url
-        {
-            get
-            {
-                return this.urlField;
-            }
-            set
-            {
-                this.urlField = value;
-            }
-        }
-
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string ManagementCertificate
-        {
-            get
-            {
-                return this.managementCertificateField;
-            }
-            set
-            {
-                this.managementCertificateField = value;
-            }
-        }
     }
 
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.32559")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.18020")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -126,9 +111,27 @@ namespace AzureMobileServiceLogViewer.Models
     public partial class PublishDataPublishProfileSubscription
     {
 
+        private string serviceManagementUrlField;
+
         private string idField;
 
         private string nameField;
+
+        private string managementCertificateField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string ServiceManagementUrl
+        {
+            get
+            {
+                return this.serviceManagementUrlField;
+            }
+            set
+            {
+                this.serviceManagementUrlField = value;
+            }
+        }
 
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
@@ -157,6 +160,21 @@ namespace AzureMobileServiceLogViewer.Models
                 this.nameField = value;
             }
         }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string ManagementCertificate
+        {
+            get
+            {
+                return this.managementCertificateField;
+            }
+            set
+            {
+                this.managementCertificateField = value;
+            }
+        }
     }
+
 
 }

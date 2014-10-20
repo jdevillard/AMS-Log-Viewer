@@ -9,6 +9,8 @@
     
     <ComponentRef Id="Component.AzureMobileServiceLogViewer.References" />
     
+    <ComponentRef Id="Component.AzureMobileServiceLogViewerFolder"/>
+    
   </Feature>
 
 </Include>
