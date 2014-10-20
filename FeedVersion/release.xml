@@ -17,4 +17,17 @@
 
     </summary>
   </entry>
+  <entry>
+    <id>https://amslogviewer.codeplex.com/releases/view/135571</id>
+    <title type="text">1.0.1.0</title>
+    <updated>2014-10-20T00:00:00Z</updated>
+    <link href="https://amslogviewer.codeplex.com/releases/view/135571" />
+    <category term="Beta" />
+    <summary>
+      Update the Publish Profile Model to be compliant to new Microsoft Azure Publish Profile.
+      Update Link to get the Publish Profile
+      Update Wix Information
+      minor bug fixes
+    </summary>
+  </entry>
 </feed>
